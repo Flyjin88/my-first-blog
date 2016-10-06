@@ -8,13 +8,13 @@
       <p> Anju if you're reading this... I'll be home soon</p>
     </div>
 
-{% for post in posts %}
       <div>
            <p>published: 11.13.2014, 11:11</p>
            <h2><a href="">My moon</a></h2>
            <p>Even though you and I seem so far apart, I can always gaze upon your beauty just by looking up.</p>
        </div>
-
+   
+{% for post in posts %}
        <div>
             <p>published: {{post.published_date}}</p>
             <h2><a href="">{{ post.title }}</a></h2>
