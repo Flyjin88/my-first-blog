@@ -13,14 +13,14 @@
            <h2><a href="">My moon</a></h2>
            <p>Even though you and I seem so far apart, I can always gaze upon your beauty just by looking up.</p>
        </div>
-   
-{% for post in posts %}
-       <div>
-            <p>published: {{post.published_date}}</p>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-{% endfor %}
+
+       {% for post in posts %}
+           <div>
+               <p>published: {{ post.published_date }}</p>
+               <h1><a href="">{{ post.title }}</a></h1>
+               <p>{{ post.text|linebreaksbr }}</p>
+           </div>
+       {% endfor %}
 
   </body>
 </html>
